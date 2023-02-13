@@ -1,11 +1,41 @@
 - Gun range.
-	 Possible features, not all should necessarily be implemented.
+	 Possible features, not all should necessarily be implemented. Features are not in any particular order of importance.
 	- Inventory system
 	- Dummy spawning system
+	- Minimap
 	- Shooting system
+		- Auto/semi auto firing mode
+		- Accuracy counter
+			- Shots missed - decrease accuracy
+			- Headshots fired- slightly increase accuracy
+		- Ammo count system
+			- UI display
+			- Bullet dropoff (damage, range)
+	- Player/enemy animations
+		- Synty studios Military pack combined with Mixamo animations
 	- Gun range level design (multiple?)
-	- Perks system? 
+	- Perks system?
+		- Counting points
+			- Receiving points by completing objectives, killing AI
+		- Perk functionality
+			- Airstrike
+			- Chopper controls
 	- Commanding Officer AI (Voice over, pathfinding if physical character?)
-	- 
+	- Popup system
+	- Loadout customization
+		- Gun customization?
+	- Character controller
+		- Moving
+		- Jumping
+		- 1st or 3rd person camera
+		- Crouching
+	- Interactable objects in the world (weapons, ammo, etc)
+	- Enemy bot AI. 
+		- Decision making
+			- Hiding
+			- Shooting
+			- Running to a better strategic point
+			- Alerting nearby AI agents
+			- 
 
 - 
