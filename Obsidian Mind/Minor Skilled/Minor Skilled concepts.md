@@ -1,47 +1,63 @@
-- **Gun range.**
-	 Possible features, not all should necessarily be implemented. Features are not in any particular order of importance.
-	- Inventory system
-	- Dummy spawning system
-	- Minimap
-	- Shooting system
-		- Auto/semi auto firing mode
-		- Accuracy counter
-			- Shots missed - decrease accuracy
-			- Headshots fired- slightly increase accuracy
-		- Ammo count system
-			- UI display
-			- Bullet dropoff (damage, range)
-	- Player/enemy animations
+Possible concepts & features, not all features should necessarily be implemented. Features are not in any particular order of importance. That order and time estimation can be found in [[Hour planning]].
+
+## Gun range.
+#### Inventory System
+	- Inventory UI
+	- Storing/counting weapons, equipment, ammo types, etc
+	- Ammo count
+		- UI display
+![[Pasted image 20230214114213.png]]
+
+#### Dummy spawning system
+	Friendly/citizen & hostile/enemy dummies
+
+#### Minimap
+
+#### Shooting system
+	Auto/semi auto firing mode
+	Accuracy counter
+		Shots missed - decrease accuracy
+		Headshots fired - slightly increase accuracy
+	Bullet dropoff (damage, range)
+
+#### Player/enemy animations
 		- Synty studios Military pack combined with Mixamo animations
-	- Gun range level design (multiple?)
-	- Perks system?
+		
+#### Gun range level design (multiple?)
+#### Perks system?
 		- Counting points
 			- Receiving points by completing objectives, killing AI
 		- Perk functionality
 			- Airstrike
 			- Chopper controls
-	- Commanding Officer AI (Voice over, pathfinding if physical character?)
-	- Popup system
-	- Loadout customization
+		
+#### Commanding Officer AI
+	- Voice over
+	- Pathfinding if physical character?
+#### Popup system
+#### Loadout customization
 		- Gun customization?
-	- Character controller
+#### Character controller
 		- Moving
 		- Jumping
-		- 1st or 3rd person camera
+		- 1st or 3rd person camera controller
 		- Crouching
-	- Interactable objects in the world (weapons, ammo, etc)
-	- Enemy bot AI. 
+		
+#### Interactable objects in the world
+	- Weapons
+	- Ammo
+#### Enemy bot AI. 
 		- Decision making
 			- Hiding
 			- Shooting
 			- Running to a better strategic point
 			- Alerting nearby AI agents
 
-- **Tank small game/simulator**
+- ### **Tank small game/simulator**
 	 - Tank controller
 		 - Rotating main cannon
 		 - Allied AI for machine gun mount
-		 - Targeting system
+		 - Targeting/fire control system
 			 - ADS UI
 		 - Damage registration system
 	 - Camera - 1st/3rd person? Switchable?
