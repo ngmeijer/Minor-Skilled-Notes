@@ -1,18 +1,18 @@
 ## Mechanics
 | **Features for MVP (ordered by priority)**                    | **Hours required** | **Hours spent** | **Priority** |
 | ------------------------------------------------------------- |:------------------:|:---------------:|:------------:|
-| [[Minor Skilled concepts#Character controller]]               |         50         |                 |      1       |
-| [[Minor Skilled concepts#Shooting system]]                    |         50         |                 |      2       |
-| [[Minor Skilled concepts#Gun range level design(s)]] |         10         |                 |      3       |
-| [[Minor Skilled concepts#Dummy spawning system]]              |         25         |             |       4   |
-| [[Minor Skilled concepts#Inventory System]]                   |         40         |                 |    5          |
-| [[Minor Skilled concepts#Player/enemy animations]]            |         15         |                 |       6       |
+| [[Concepts#Character controller]]               |         50         |                 |      1       |
+| [[Concepts#Shooting system]]                    |         50         |                 |      2       |
+| [[Concepts#Gun range level design(s)]] |         10         |                 |      3       |
+| [[Concepts#Dummy spawning system]]              |         25         |             |       4   |
+| [[Concepts#Inventory System]]                   |         40         |                 |    5          |
+| [[Concepts#Player/enemy animations]]            |         15         |                 |       6       |
 
 | **Optional features (ordered by priority)**                  | **Hours required** | Priority |
 | ------------------------------------------------------------ |:------------------:|:--------:|
-| [[Minor Skilled concepts#Minimap]]                           |         5          |          |
-| [[Minor Skilled concepts#Commanding Officer AI]]             |         25          |          |
-| [[Minor Skilled concepts#Interactable objects in the world]] |         10          |          |
-| [[Minor Skilled concepts#Enemy bot AI.]]                     |         50          |          |
-| [[Minor Skilled concepts#Killstreak system]]                     |         50          |          |
-| [[Minor Skilled concepts#Loadout customization]]                     |         50          |          |
+| [[Concepts#Minimap]]                           |         5          |          |
+| [[Concepts#Commanding Officer AI]]             |         25          |          |
+| [[Concepts#Interactable objects in the world]] |         10          |          |
+| [[Concepts#Enemy bot AI.]]                     |         50          |          |
+| [[Concepts#Killstreak system]]                     |         50          |          |
+| [[Concepts#Loadout customization]]                     |         50          |          |

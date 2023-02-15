@@ -50,24 +50,28 @@ Possible concepts & features, not all features should necessarily be implemented
 		- Running to a better strategic point
 		- Alerting nearby AI agents
 
-- ### **Tank small game/simulator**
-	 - Tank controller
-		 - Rotating main cannon
-		 - Allied AI for machine gun mount
-		 - Targeting/fire control system
-			 - ADS UI
-		 - Damage registration system
+## Tank small game/simulator
+#### Tank controller
+	 - Rotating main cannon
+	 - Drive back & forth, rotate 360.
 	 - Camera - 1st/3rd person? Switchable?
 		 - Free look 3rd person/rotate cannon with keybind
 		 - Stabilized main cannon - tank can rotate, cannon will remain in the same place. Cannon is controlled with the previously mentioned keybind.
-	 - Destructible buildings - possible to use Unity Jobs for this?
-	 - Enemy tank AI - FSM/Behaviour Trees
+
+#### Destructible buildings/terrain
+
+#### Enemy tank AI
+		- FSM/Behaviour Trees?
 		 - AI working together? Free for all?
 		 - Decision making
 			 - Best target
 			 - Position
 			 - Retreat
-	 - Shooting system
+
+#### Tank shooting system
+		 - Allied AI for machine gun mount
+		 - Targeting/fire control system
+			 - ADS UI
 		 - Ammo counter
 		 - Main cannon
 			 - Switch ammo types 
@@ -77,14 +81,26 @@ Possible concepts & features, not all features should necessarily be implemented
 				 - Gas shells
 		 - Machine gun
 			- Possibly only 1 ammo type?
-	 - Tank customization
-	 - Level design environment.  
+
+#### Damage registration system
+
+#### Damage repair system
+
+#### Tank customization
+
+#### Landmines
+
+#### Level design
 			- Does not have to be complex, or perhaps even use existing maps as inspiration. 
 				- Battlefield 1 - the following options are most similar to the asset pack I want to use
 					- Sinai Desert
 					- Suez
-	  - APC vehicles
-	  - Minimap/open map on keypress.
+	  - APC vehicles?
+
+#### Minimap/Tactical map/Compass
 		  - Track player position
 		  - Some kind of objective
-		  - 
+		  - A compass to indicate the direction the player is facing
+
+#### Enemy tank communication
+	- Enemy tanks should communicate with eachother.
