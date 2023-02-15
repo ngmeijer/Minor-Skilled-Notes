@@ -1,11 +1,11 @@
 {
 	"nodes":[
-		{"id":"7b7bf0403fc91de4","x":25,"y":-226,"width":400,"height":225,"type":"file","file":"Attachments/Pasted image 20230213143919.png"},
-		{"id":"7739e4537da75e5e","x":482,"y":-283,"width":509,"height":282,"type":"file","file":"Attachments/Pasted image 20230213144935.png"},
-		{"id":"9265ae0197dc7e43","x":-555,"y":-313,"width":554,"height":312,"type":"file","file":"Attachments/Pasted image 20230213142802.png"},
-		{"id":"56b567cc7b980e70","x":154,"y":200,"width":476,"height":144,"type":"file","file":"Attachments/Pasted image 20230213144857.png"},
+		{"id":"7b7bf0403fc91de4","x":25,"y":-226,"width":400,"height":225,"type":"file","file":"Minor Skilled/Attachments/EnemyModels.png"},
+		{"id":"7739e4537da75e5e","x":482,"y":-283,"width":509,"height":282,"type":"file","file":"Minor Skilled/Attachments/LoadoutCustomizationExample.png"},
+		{"id":"9265ae0197dc7e43","x":-555,"y":-313,"width":554,"height":312,"type":"file","file":"Minor Skilled/Attachments/StyleExample.png"},
+		{"id":"56b567cc7b980e70","x":154,"y":200,"width":476,"height":144,"type":"file","file":"Minor Skilled/Attachments/AmmoCountUIExample.png"},
 		{"id":"533c3b85b93492ab","x":154,"y":140,"width":271,"height":60,"color":"1","type":"text","text":"Ammo counter"},
-		{"id":"57f90fd9b3c1f12d","x":-432,"y":200,"width":457,"height":257,"type":"file","file":"Attachments/Pasted image 20230213144656.png"},
+		{"id":"57f90fd9b3c1f12d","x":-432,"y":200,"width":457,"height":257,"type":"file","file":"Minor Skilled/Attachments/GunRangeExample.png"},
 		{"id":"ee1b381188793a16","x":-432,"y":140,"width":289,"height":60,"color":"1","type":"text","text":"Gun range"},
 		{"id":"c45776999829455f","x":25,"y":-283,"width":299,"height":57,"color":"1","type":"text","text":"Enemy models"},
 		{"id":"5175b84ee8e98837","x":482,"y":-341,"width":299,"height":57,"color":"1","type":"text","text":"Gun customization"}

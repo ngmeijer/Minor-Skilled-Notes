@@ -1,4 +1,4 @@
-Possible concepts & features, not all features should necessarily be implemented. Features are not in any particular order of importance. That order and time estimation can be found in [[Hour planning]].
+Possible concepts & features, not all features should necessarily be implemented. Features are not in any particular order of importance. That order and time estimation can be found in [[Hour planning for Gun Range concept]].
 
 ## Gun range.
 #### Inventory System
@@ -6,7 +6,7 @@ Possible concepts & features, not all features should necessarily be implemented
 	- Storing/counting weapons, equipment, ammo types, etc
 	- Ammo count
 		- UI display
-![[Pasted image 20230214114213.png]]
+	- Pick up weapons, ammo, other items from the level.
 
 #### Dummy spawning system
 	Friendly/citizen & hostile/enemy dummies
@@ -21,37 +21,34 @@ Possible concepts & features, not all features should necessarily be implemented
 	Bullet dropoff (damage, range)
 
 #### Player/enemy animations
-		- Synty studios Military pack combined with Mixamo animations
+    - Synty studios Military pack combined with Mixamo animations
 		
-#### Gun range level design (multiple?)
-#### Perks system?
-		- Counting points
-			- Receiving points by completing objectives, killing AI
-		- Perk functionality
-			- Airstrike
-			- Chopper controls
+#### Gun range level design(s)
+#### Killstreak system
+	- Counting points
+		- Receiving points by completing objectives, killing AI
+	- Perk functionality
+		- Airstrike
+		- Chopper controls
 		
 #### Commanding Officer AI
 	- Voice over
 	- Pathfinding if physical character?
 #### Popup system
 #### Loadout customization
-		- Gun customization?
+	- Gun customization?
 #### Character controller
-		- Moving
-		- Jumping
-		- 1st or 3rd person camera controller
-		- Crouching
+	- Moving
+	- Jumping
+	- 1st or 3rd person camera controller
+	- Crouching
 		
-#### Interactable objects in the world
-	- Weapons
-	- Ammo
 #### Enemy bot AI. 
-		- Decision making
-			- Hiding
-			- Shooting
-			- Running to a better strategic point
-			- Alerting nearby AI agents
+	- Decision making
+		- Hiding
+		- Shooting
+		- Running to a better strategic point
+		- Alerting nearby AI agents
 
 - ### **Tank small game/simulator**
 	 - Tank controller
