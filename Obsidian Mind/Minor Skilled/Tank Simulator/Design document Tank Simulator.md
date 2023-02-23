@@ -49,7 +49,7 @@ Tank tracks should respond to terrain changes.
 
 
 ### [[Concepts#Enemy tank AI]]
-Finite State Machines or Behaviour Trees for AI. I haven't done Behaviour Trees before, so that would be interesting to learn.
+Behaviour Trees for AI. I haven't done Behaviour Trees before, so that would be interesting to learn.
 The AI should have an FOV system.
 
 ### Final product:
@@ -82,12 +82,18 @@ Shells are physical objects in the scene. Speed shouldn't be too high, so that t
 Screen shake on shell fired.
 Dust particle system around tank on shell fired.
 Tank kickback on shell fired.
+Popup system
+   - Reloading main cannon
+   - Enemy hit
+   - {TankPartName} hit/destroyed!
 
 ### Final product:
  - A shooting system I can use for both the player and AI agents.
 
 ### Subgoals
  - UI for all camera modes
+	 - Reloading
+	 - Popups
  - A physics-accurate shell-firing system
  - A formula to calculate shell force needed to hit the target.
 	 - If fired shell comes from an AI agent, include an "accuracy" variable into the formula.
