@@ -72,20 +72,22 @@ The AI should have an FOV system.
  - Designing the behaviour tree, so that I can create several behaviours for AI to respond against player actions.
 
 ### [[Concepts#Tank shooting system]]
-There should be a targeting/fire control system in place. Possibly automatic target finding/radar?
+There should be a targeting/fire control system in place. Possibly automatic target finding/radar (as customization/upgrade option)?
 SFX for shooting, reloading.
 
 The system should support all camera perspectives (ADS, 1st person, 3rd person).
 
 Shells are physical objects in the scene. Speed shouldn't be too high, so that the player is able to see the shell coming their way. 
+Different shell types
+- Armor-piercing round
+- High-explosive round
+- etc
 
 Screen shake on shell fired.
 Dust particle system around tank on shell fired.
 Tank kickback on shell fired.
 Popup system
    - Reloading main cannon
-   - Enemy hit
-   - {TankPartName} hit/destroyed!
 
 ### Final product:
  - A shooting system I can use for both the player and AI agents.
@@ -94,13 +96,15 @@ Popup system
  - UI for all camera modes
 	 - Reloading
 	 - Popups
+	 - UI for target finding system
  - A physics-accurate shell-firing system
- - A formula to calculate shell force needed to hit the target.
-	 - If fired shell comes from an AI agent, include an "accuracy" variable into the formula.
+ - A formula for AI agents to calculate shell force needed to hit the target.
+	 - Include an "accuracy" variable into the formula to make varying "experienced" agents.
  - Particle systems on shell fire & hit
  - Sound effects
 	 - Shell fire & hit
 	 - Reloading
+- Ammo system
 
 ### Skills I want to learn
  - System design.
@@ -109,10 +113,19 @@ Popup system
 ### [[Concepts#Damage registration system]]
 When being shot at, it should be very clear what parts of the tank have been hit. A HUD element, on which you can see whether any part of the tank has been damaged, and how severe that damage is. Likely color code this (red value = 0: no damage, red value = 255: nearly/completely destroyed). When a part of the tank has under "X" % health, another hit will destroy the tank.
 
+- Armor
+	- Relative (%) armor penetration
+	- Absolute (flat) armor penetration
+- Critical damage
+	- Critical chace
+	- Multiplier
+
 Damage example:
 	When the tank has been hit with a shell in its right driving tracks, driving is affected. The player will not be able to drive straight until the damage has been repaired. Smoke particle systems should emit from the damaged spot. In the HUD element, the right side/tracks of the tank are highlighted with a red value.
 
 When hitting an enemy, there should be a log of tank parts that have been damaged/destroyed.
+
+Check when health falls below 0. Activate a "destroyed tank" when that happens. Activate game over screen. Disable input.
 
 ### Final product
 - A system compatible with both the player tank and enemy tanks.
@@ -120,7 +133,11 @@ When hitting an enemy, there should be a log of tank parts that have been damage
 
 ### Subgoals
 - UI design
--   
+-  Popup system add
+   - Tank instance hit
+   - {TankPartName} hit/destroyed!
+- Damage numbers shown on tank?
+	- Tween fade, moving upwards
 
 ### Skills I want to learn
 
