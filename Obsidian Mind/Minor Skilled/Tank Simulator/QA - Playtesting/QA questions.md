@@ -16,6 +16,7 @@
 	Migrate to new input system
 	Be careful with nesting components to prevent calls like component.movecomponent.component.component.Function()
 	namespaces/assembly definitions
+	Better to have a GameManager with a reference to the player rather than Gameobject.Find()/WithTag()
 
 
 Remove old/unused code
