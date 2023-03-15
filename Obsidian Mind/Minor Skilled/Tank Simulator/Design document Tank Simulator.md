@@ -3,7 +3,10 @@ Hour estimations can be found in [[Hour planning for Tank Simulator concept]].
 
 # Features for MVP
 ### [[Concepts#Tank controller]]
-The tank should be able to move back and forth, and rotate in a full range. When rotating, the cannon stays where it is. The cannon will only be moved by moving the mouse.
+The tank should be able to move back and forth, and rotate in a full range.
+A gear shifting system could be implemented. 
+When rotating, the cannon stays where it is. 
+The cannon will only be moved by moving the mouse.
 3 different camera modes:
 	- 3rd person
 	- 1st person
@@ -11,6 +14,18 @@ The tank should be able to move back and forth, and rotate in a full range. When
 
 The tank tracks should be animated so that it's clear the tank is driving when the camera is in 3rd person mode. I can do this by animating the UVs.
 Tank tracks should respond to terrain changes.
+
+https://entitycrisis.blogspot.com/2010/12/unity3d-wheelcollider-and-motortorque.html
+https://www.caranddriver.com/news/a15347872/horsepower-vs-torque-whats-the-difference/
+https://www.gao.gov/assets/nsiad-91-114.pdf
+Motor torque/RPM resources.
+
+M1A1 abrams will be used as reference for tank weight.
+- Engine: 1500 hp/1120kW, 30.000 rpm
+- max speed: 45mph (72km/h) on road, 30mph (48km/h) off road
+- Weight: 60/67 tons
+![[Pasted image 20230314110000.png]]
+
 
 ### Final product:
 - A reusable tank controller, with an editor window to control properties such as 
@@ -22,25 +37,34 @@ Tank tracks should respond to terrain changes.
 - In the tool, you will find a list of all found tanks. You are able to easily select a tank and update its properties.
 
 ### Subgoals
-- Camera modes
-	- ADS
-	- 1st person
-	- 3rd person
-		- When the barrel aims up, the camera should move towards the ground.
-		- When the barrel aims down, the camera should move up.
-		- The camera should always be exactly behind the turret.
-- Rotations
+- Move controller
+	- Gear shifting system
+	- Rotating
+		- Single track control - that's how a tank rotates
+	- Driving backwards
 	- Make sure all rotations are correct, when on a slope (angled surface) as well.
 	- Hull rotation 
 		- Tanks do this by speeding up one track faster than the other: rotating to the right? Speed up left track.
-	- Turret rotation - full 360° degrees around the tank
-	- Barrel rotation - rotate on x-axis, so it only moves up and down.
-	- Offset turret rotation when tank hull rotates (if lock bool is true). This ensures the barrel always stays on target without having to move the mouse.
-- Implement custom editor.
+
+- Custom editor
 	- Find available tanks
 		- Select a tank to edit properties
 			- Tank mass, max speed, acceleration, single track acceleration
 			- Wheel collider properties.
+
+
+- Camera controller
+	- Different camera modes
+		- ADS
+		- 1st person
+		- 3rd person
+			- When the barrel aims up, the camera should move towards the ground.
+			- When the barrel aims down, the camera should move up.
+			- The camera should always be exactly behind the turret.
+- Turret controller
+	- Turret rotation - full 360° degrees around the tank
+	- Barrel rotation - rotate on x-axis, so it only moves up and down.
+	- Offset turret rotation when tank hull rotates (if lock bool is true). This ensures the barrel always stays on target without having to move the mouse.
 
 ### Skills I want to learn
 - Improve editor scripting skills (external editor window, not just a script with buttons in the inspector)
