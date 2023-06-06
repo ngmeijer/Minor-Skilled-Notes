@@ -35,3 +35,6 @@ GTA V
 - Compass 
 ![[Pasted image 20230315153146.png]]
 Gear shifting system?
+
+![[Pasted image 20230317142307.png]]
+Popups for damage done/received

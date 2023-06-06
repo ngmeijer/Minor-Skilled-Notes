@@ -82,9 +82,8 @@ Possible concepts & features, not all features should necessarily be implemented
 		 - Machine gun
 			- Possibly only 1 ammo type?
 
-#### Damage registration system
+#### Damage registration & repair system
 
-#### Damage repair system
 
 #### Tank customization
 

@@ -3,6 +3,14 @@ Used to spawn large amounts of bullets, enemies or other objects. Particle syste
 
 ## Behaviour trees
 Combined with [[Researched algorithms & technologies#Multithreading/Jobs system/Burst compiler]], I can create behaviour trees for the AI in the project. Multithreading will mostly likely be used for pathfinding, depending on the implementation. The Jobs system doesn't work with any "Unity" code (GameObjects, transform, NavMesh etc), but only accepts so-called "blittable data types". 
+- Abstract class behaviour tree
+	- Branch setup is defined statically in every custom node class. If you want a slightly different parent node, you have to create a new node for it (or another tree class, redefining the nodes).
+	- Agent values are reset automatically (health, target position etc) when exiting the game, so they are not stored. 
+	- Values are NOT shared between agent instances.
+- Scriptable object behaviour tree
+	- Branch setup can be completely customizated for every behaviour tree instance.
+	- Values in the blackboard are not reset on game exit. Values in the blackboard are shared between enemies (if they use the same blackboard asset instance)
+		- Solution would be to not store agent-specific values (like NavMeshAgent reference, current agent moveposition) in the blackboard, but rather in a monobehaviour component attached to the agent.
 
 ## Design patterns
 Already learned about this during the Software Architecture course, but I'm sure there are a lot of refinements possible, and of course quite a few new things to learn as well.

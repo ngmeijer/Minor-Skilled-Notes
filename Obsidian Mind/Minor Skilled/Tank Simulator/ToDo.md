@@ -1,0 +1,39 @@
+- [ ] Credits showing in main menu
+- [x] Pause menu in level
+- [ ] Main menu UI elements
+	- [x] Background buttons
+	- [x] Different font?
+- [ ] Main menu more particle systems
+- [ ] Research post processing more
+- [ ] Test damage registration system with enemy AI more (damage registered correctly?)
+- [ ] Fix gear shifting
+	- [ ] Better graphs
+	- [ ] Prevent accelerating from 0mph in anything > 1st gear
+	- [ ] More realistic RPM
+	- [ ] Rotating doesn't really work
+- [ ] Better level design
+	- [ ] Village expanding
+- [ ] Test AI agents more
+	- [ ] When close to eachother
+		- [ ] Prevent pathfinding in a range of enemy agent
+	- [ ] Fix turret overshooting
+	- [ ] Repairing? Not tested yet if it works.
+- [ ] Different ammo types?
+	- [ ] Armor penetrating
+		- [ ] Do an absolute amount of damage to health & armor
+	- [ ] High explosive
+		- [ ] Removes a large amount of armor at a time
+	- [ ] High Explosive Anti tank
+		- [ ] ?
+- [ ] Fix bug where the crosshairs move offscreen when the turret rotates slower than the camera
+	- [ ] Change reload indicator position together with crosshair
+- [ ] Fix crosshairs not being fully aligned when the turret does not move
+- [ ] Add SFX
+	- [ ] Background music
+	- [ ] Engine sounds
+	- [ ] Wind (desert?)
+- [ ] Compile list of future features
+	- [ ] Tank customization
+	- [ ] FPS combat
+	- [ ] Controlling other vehicles besides tanks (jets, helicopters)
+- [ ] Optimizing performance

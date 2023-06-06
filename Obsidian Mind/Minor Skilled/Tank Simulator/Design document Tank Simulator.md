@@ -113,6 +113,14 @@ Tank kickback on shell fired.
 Popup system
    - Reloading main cannon
 
+UI: 
+- crosshair low Y: -75
+- crosshair high Y: 320
+
+320 + 75 = 395 pixels
+30 degrees angle 
+395 / 30 = 13.17 pixels per degree 
+
 ### Final product:
  - A shooting system I can use for both the player and AI agents.
 
@@ -134,7 +142,7 @@ Popup system
  - System design.
  - A better understanding of how physics affect shell travel.
 
-### [[Concepts#Damage registration system]]
+### [[Concepts#Damage registration & repair system]]
 When being shot at, it should be very clear what parts of the tank have been hit. A HUD element, on which you can see whether any part of the tank has been damaged, and how severe that damage is. Likely color code this (red value = 0: no damage, red value = 255: nearly/completely destroyed). When a part of the tank has under "X" % health, another hit will destroy the tank.
 
 - Armor
@@ -165,7 +173,6 @@ Check when health falls below 0. Activate a "destroyed tank" when that happens. 
 
 ### Skills I want to learn
 
-### [[Concepts#Damage repair system]]
 Just like there is a damage registration system, there should be a way to repair the damage.
 Possibly just some UI indicators and sound effects to start with. 
 The tank cannot be used while repairing is done (moving or shooting.)
@@ -200,6 +207,38 @@ I've found that the asset pack contains several "vehicle attachments", such as a
 Can also make a "level" system to indicate the strength of a tank. Show enemy level as well.
 
 I can practice my editor scripting skills by making an editor with which I can change the properties of these tanks & upgrades.
+
+### Final product
+- A customization menu, in which the player can view the tank and choose upgrades.
+  Upgrades are applied visually if possible (attachment models), and stats are shown as graphs.
+
+### Subgoals
+- UI menu
+- Custom editor
+	- Upgrade tank properties
+		- Acceleration
+		- Max speed
+		- Health
+		- Armor
+		- ADS speed
+		- More fuel?
+		- Lighting upgrade
+		- Smoke cannisters
+		- Ammo count?
+		- Repair speed
+	- Buy new types of shells
+		- Armor piercing
+		- Gas (affects armor over time?)
+		- Napalm?
+
+### Skills I want to learn
+- Improved editor scripting skills
+- Tween animations?
+
+### [[Concepts#Main menu]]
+There should be a main menu for the game. It should be pretty simple in terms of functionality. Only a button that leads to the customization menu ([[Design document Tank Simulator#Concepts Tank customization]]), a button that leads to the level/gameplay, and a button that leads to a window for the credits for the assets I used.
+
+The background will be "animated", meaning it's a camera aiming towards a piece of the level. Particle effects, sound and lighting will make it look nice. 
 
 ### Final product
 - A customization menu, in which the player can view the tank and choose upgrades.
