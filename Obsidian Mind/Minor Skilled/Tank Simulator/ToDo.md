@@ -3,14 +3,19 @@
 - [ ] Main menu UI elements
 	- [x] Background buttons
 	- [x] Different font?
-- [ ] Main menu more particle systems
+	- [x] Button animations
+- [x] Main menu more particle systems
 - [ ] Research post processing more
 - [ ] Test damage registration system with enemy AI more (damage registered correctly?)
+- [x] Fix post processing activating when in repair mode and camera enters ADS post process volume
 - [ ] Fix gear shifting
-	- [ ] Better graphs
+	- [x] Better WheelCollider values
+	- [ ] Better graphs (= more realistic RPM)
 	- [ ] Prevent accelerating from 0mph in anything > 1st gear
-	- [ ] More realistic RPM
-	- [ ] Rotating doesn't really work
+	- [x] Rotating doesn't really work
+	- [ ] Dynamic center of mass
+		- [ ] Moves to the opposite direction of where the tank moves
+		- [ ] Rotating to the right? CoM moves left slightly, to balance the tank and prevent flipping over
 - [ ] Better level design
 	- [ ] Village expanding
 - [ ] Test AI agents more
@@ -18,7 +23,9 @@
 		- [ ] Prevent pathfinding in a range of enemy agent
 	- [ ] Fix turret overshooting
 	- [ ] Repairing? Not tested yet if it works.
-- [ ] Different ammo types?
+	- [ ] Tank doesn't "die" (stop moving) on destruction. Just continues behaviour tree. Add node to check if is dead.
+	- [ ] Tank doesn't respond to being shot. Add node 
+- [ ] Different ammo types? (remove UI if not implemented!)
 	- [ ] Armor penetrating
 		- [ ] Do an absolute amount of damage to health & armor
 	- [ ] High explosive
@@ -27,13 +34,17 @@
 		- [ ] ?
 - [ ] Fix bug where the crosshairs move offscreen when the turret rotates slower than the camera
 	- [ ] Change reload indicator position together with crosshair
-- [ ] Fix crosshairs not being fully aligned when the turret does not move
-- [ ] Add SFX
+- [x] Fix crosshairs not being fully aligned when the turret does not move
+- [x] Fix being able to use the ADS zoom in 3rd person
+- [x] Add SFX
 	- [ ] Background music
 	- [ ] Engine sounds
-	- [ ] Wind (desert?)
+	- [x] Wind (desert?)
 - [ ] Compile list of future features
 	- [ ] Tank customization
 	- [ ] FPS combat
 	- [ ] Controlling other vehicles besides tanks (jets, helicopters)
 - [ ] Optimizing performance
+- [ ] Write report
+	- [ ] EAAA source mentioning
+- [ ] Documenting project
