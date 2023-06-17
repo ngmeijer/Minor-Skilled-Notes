@@ -8,14 +8,22 @@
 - [ ] Research post processing more
 - [ ] Test damage registration system with enemy AI more (damage registered correctly?)
 - [x] Fix post processing activating when in repair mode and camera enters ADS post process volume
-- [ ] Fix gear shifting
+- [x] **Fix gear shifting** - SCRAPPED
 	- [x] Better WheelCollider values
 	- [ ] Better graphs (= more realistic RPM)
 	- [ ] Prevent accelerating from 0mph in anything > 1st gear
 	- [x] Rotating doesn't really work
 	- [ ] Dynamic center of mass
 		- [ ] Moves to the opposite direction of where the tank moves
-		- [ ] Rotating to the right? CoM moves left slightly, to balance the tank and prevent flipping over
+		- [ ] Rotating to the right? CoM moves left slightly, to balance the tank and prevent flipping ove
+- [x] Remake movement system
+	- [x] Raycast from "wheels" to ground
+	- [x] Get normal from raycast hit.
+	- [x] Get average of the returned vectors to determine ground coverage and therefore speed of tank
+	- [x] Handle speeding/braking by adding force
+	- [x] Screenshake on drive? Adjusting FOV on drive?
+	- [ ] Dynamic particle systems on drive (more smoke when driving, less smoke when stationary?)
+- [ ] Camera wall detection
 - [ ] Better level design
 	- [ ] Village expanding
 - [ ] Test AI agents more
@@ -23,7 +31,7 @@
 		- [ ] Prevent pathfinding in a range of enemy agent
 	- [ ] Fix turret overshooting
 	- [ ] Repairing? Not tested yet if it works.
-	- [ ] Tank doesn't "die" (stop moving) on destruction. Just continues behaviour tree. Add node to check if is dead.
+	- [x] Tank doesn't "die" (stop moving) on destruction. Just continues behaviour tree. Add node to check if is dead.
 	- [ ] Tank doesn't respond to being shot. Add node 
 - [ ] Different ammo types? (remove UI if not implemented!)
 	- [ ] Armor penetrating
@@ -33,7 +41,7 @@
 	- [ ] High Explosive Anti tank
 		- [ ] ?
 - [ ] Fix bug where the crosshairs move offscreen when the turret rotates slower than the camera
-	- [ ] Change reload indicator position together with crosshair
+	- [x] Change reload indicator position together with crosshair
 - [x] Fix crosshairs not being fully aligned when the turret does not move
 - [x] Fix being able to use the ADS zoom in 3rd person
 - [x] Add SFX
@@ -48,3 +56,5 @@
 - [ ] Write report
 	- [ ] EAAA source mentioning
 - [ ] Documenting project
+- [ ] Import missing assets on laptop for meetings (skybox, other model packs)
+- [ ] UML diagrams
