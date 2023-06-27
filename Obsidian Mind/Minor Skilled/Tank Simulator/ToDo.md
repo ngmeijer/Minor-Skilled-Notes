@@ -6,8 +6,10 @@
 	- [x] Button animations
 - [x] Main menu more particle systems
 - [ ] Research post processing more
-- [ ] Test damage registration system with enemy AI more (damage registered correctly?)
+- [ ] Test damage registration system for player more (damage registered correctly?)
 - [x] Fix post processing activating when in repair mode and camera enters ADS post process volume
+- [x] Fix bug where editor pauses when pressing F to inspect enemy in 3rd person
+- [x] Apply post processing to player & hostile tank inspection.
 - [x] **Fix gear shifting** - SCRAPPED
 	- [x] Better WheelCollider values
 	- [ ] Better graphs (= more realistic RPM)
@@ -16,23 +18,29 @@
 	- [ ] Dynamic center of mass
 		- [ ] Moves to the opposite direction of where the tank moves
 		- [ ] Rotating to the right? CoM moves left slightly, to balance the tank and prevent flipping ove
+		- [ ] 
 - [x] Remake movement system
 	- [x] Raycast from "wheels" to ground
 	- [x] Get normal from raycast hit.
 	- [x] Get average of the returned vectors to determine ground coverage and therefore speed of tank
 	- [x] Handle speeding/braking by adding force
 	- [x] Screenshake on drive? Adjusting FOV on drive?
+	- [x] When switching zoom level, lerp FOV to new level for a smoother transition
 	- [ ] Dynamic particle systems on drive (more smoke when driving, less smoke when stationary?)
 - [ ] Camera wall detection
 - [ ] Better level design
 	- [ ] Village expanding
 - [ ] Test AI agents more
-	- [ ] When close to eachother
-		- [ ] Prevent pathfinding in a range of enemy agent
+	- [x] When close to eachother, prevent pathfinding in a range of enemy agent
 	- [ ] Fix turret overshooting
-	- [ ] Repairing? Not tested yet if it works.
+	- [x] Player not detected correctly > not switching to shoot node.
+	- [x] Repairing? Not tested yet if it works.
+	- [ ] Tank doesn't correctly move towards a cover position before repairing.
 	- [x] Tank doesn't "die" (stop moving) on destruction. Just continues behaviour tree. Add node to check if is dead.
-	- [ ] Tank doesn't respond to being shot. Add node 
+	- [x] Tank doesn't respond to being shot. Add behaviour for that
+	- [ ] On being shot, cover points keep being generated until timer runs out?
+	- [x] After exiting the "check if shot" phase, the turret doesn't rotate back to the target patrol point but stays in the current rotation.
+	- [x] In the behaviour tree, assign parent node as parent to child node so navigating through the tree is a bit easier
 - [ ] Different ammo types? (remove UI if not implemented!)
 	- [ ] Armor penetrating
 		- [ ] Do an absolute amount of damage to health & armor
@@ -41,17 +49,22 @@
 	- [ ] High Explosive Anti tank
 		- [ ] ?
 - [ ] Fix bug where the crosshairs move offscreen when the turret rotates slower than the camera
-	- [x] Change reload indicator position together with crosshair
+- [x] Change reload indicator position together with crosshair
 - [x] Fix crosshairs not being fully aligned when the turret does not move
 - [x] Fix being able to use the ADS zoom in 3rd person
+- [x] Fix tank floating in air on death (??) 
+- [ ] Fix target crosshair incorrect position/not following enemy tank
+- [ ] On tank death polishing?
+	- [ ] More VFX
+	- [ ] Sound effects
+	- [ ] Camera tweening
 - [x] Add SFX
 	- [ ] Background music
 	- [ ] Engine sounds
 	- [x] Wind (desert?)
-- [ ] Compile list of future features
+- [x] Compile list of future features
 	- [ ] Tank customization
 	- [ ] FPS combat
-	- [ ] Controlling other vehicles besides tanks (jets, helicopters)
 - [ ] Optimizing performance
 - [ ] Write report
 	- [ ] EAAA source mentioning
